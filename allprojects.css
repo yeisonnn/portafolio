@@ -1,0 +1,128 @@
+/* FONT FAMILY */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+/* font-family: 'Special Elite', cursive; */
+
+/* VARIABLES */
+:root {
+  --color-background: #181818;
+  --color-red: #e50914;
+  --color-red-secondary: #e50914e2;
+  --color-yellow: #f5c518;
+  --color-light: #fff;
+  --color-dark: #111;
+}
+
+/* INITIAL SETTINGS */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  color: var(--color-light);
+
+  font-family: 'Special Elite', cursive;
+}
+
+body {
+  background-color: var(--color-background);
+  letter-spacing: 1px;
+}
+
+.nav-bar {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 1fr 20%;
+  background-color: var(--color-dark);
+  color: #888;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  height: 60px;
+  width: 60px;
+}
+
+.nav-links ul {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.link {
+  list-style: none;
+}
+
+.link a {
+  color: inherit;
+  padding: 1rem 2rem;
+  font-size: 2.4rem;
+  text-decoration: none;
+}
+
+.link a:hover {
+  background-color: var(--color-background);
+  transform: scale(1.2);
+  color: #fff;
+  border-bottom: 2px solid var(--color-light);
+}
+
+/* -------------------------------------- */
+/* content */
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1rem;
+}
+
+.diplomas h2 {
+  font-size: 2.6rem;
+  letter-spacing: 2px;
+}
+
+.certificate {
+  border: 1px solid #fff;
+  display: grid;
+  grid-template-columns: 1fr 20% 20% 20%;
+  font-size: 1.6rem;
+  padding: 0.4rem;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.certificate span {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+}
+
+.certificate p:nth-child(1) {
+  background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.certificate p:nth-child(3) {
+  color: var(--color-red);
+}
+
+.link {
+  color: royalblue;
+  opacity: 0.8;
+}
+
+.link:hover {
+  opacity: 1;
+}

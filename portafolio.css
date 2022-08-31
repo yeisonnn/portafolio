@@ -209,6 +209,16 @@ body {
   opacity: 1;
 }
 
+.see-more {
+  text-decoration: none;
+}
+
+.see-more:visited,
+.see-more:active {
+  color: #222;
+  text-decoration: none;
+}
+
 .location {
   font-size: 2rem;
   display: flex;

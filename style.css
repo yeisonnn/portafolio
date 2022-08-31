@@ -167,6 +167,15 @@ body {
   background-color: rgba(65, 105, 225);
 }
 
+.link-resume {
+  text-decoration: none;
+  color: #fff;
+}
+
+.link-resume:visited {
+  color: #fff;
+}
+
 /* Skills */
 
 .skills {
