@@ -85,9 +85,13 @@ body {
   font-size: 2rem;
 }
 
+.navbar {
+  width: 110%;
+}
 .navbar-links {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
+  align-items: center;
   list-style: none;
 }
 

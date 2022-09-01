@@ -35,6 +35,7 @@ html {
 body {
   background-color: var(--color-background);
   letter-spacing: 1px;
+  min-height: 100vh;
 }
 
 .nav-bar {
@@ -85,19 +86,67 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 1rem;
+  grid-column-gap: 3rem;
 }
 
+/* project */
+.projects {
+}
+.projects h2 {
+  font-size: 2.4rem;
+  color: var(--color-yellow);
+  margin-bottom: 1rem;
+}
+
+.project {
+}
+
+.project-header {
+  display: grid;
+  grid-template-columns: 25% 20% 1fr;
+  font-size: 1.5rem;
+  border: 1px solid #fff;
+  padding: 0.3rem;
+  background-color: #fff;
+  color: #111;
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  font-size: 1.4rem;
+}
+
+.link-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 2rem;
+}
+.proj-link {
+  color: dodgerblue;
+  font-size: 1.4rem;
+  display: inline-block;
+  background-color: dodgerblue;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 30px;
+  margin-bottom: 0.5rem;
+}
+
+/* diplomas */
 .diplomas h2 {
   font-size: 2.6rem;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .certificate {
   border: 1px solid #fff;
   display: grid;
-  grid-template-columns: 1fr 20% 20% 20%;
+  grid-template-columns: 1fr 20% 20% min-content;
   font-size: 1.6rem;
-  padding: 0.4rem;
+  padding: 0.5rem;
   margin-top: 1rem;
   position: relative;
 }
