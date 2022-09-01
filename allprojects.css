@@ -103,13 +103,18 @@ body {
 
 .project-header {
   display: grid;
-  grid-template-columns: 25% 20% 1fr;
+  grid-template-columns: 30% 1fr 1fr;
   font-size: 1.5rem;
   border: 1px solid #fff;
   padding: 0.3rem;
   background-color: #fff;
   color: #111;
   margin-bottom: 1rem;
+}
+
+.project-header p:first-child {
+  color: var(--color-red);
+  font-weight: bold;
 }
 
 .project-description {
