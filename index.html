@@ -4,308 +4,459 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portafolio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      rel="icon"
-      href="./images/programming-language-symbol-svgrepo-com.svg"
-    />
+    <title>Hi, I'm Yeisson</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="./images/myPageIcon.png" />
     <script defer src="./index.js"></script>
   </head>
   <body>
-    <div class="container">
-      <header>
-        <nav class="nav-bar">
-          <div class="logo">
-            <img
-              src="./images/programming-language-symbol-svgrepo-com.svg"
-              alt="logo"
-            />
+    <div class="main-container">
+      <div class="main">
+        <div class="navbar">
+          <ul class="nav-list">
+            <li><a class="link" href="#about">About</a></li>
+            <li><a class="link" href="#education">Education</a></li>
+            <li><a class="link" href="#skills">Skills</a></li>
+            <li><a class="link" href="#resume">Resume</a></li>
+            <li><a class="link" href="#contact">Contact</a></li>
+          </ul>
+          <div id="wrapper">
+            <div class="circle icon">
+              <div class="line line-top"></div>
+              <div class="line line-middle"></div>
+              <div class="line line-bottom"></div>
+            </div>
           </div>
-          <div class="nav-links">
-            <ul>
-              <li class="link"><a href="./about.html">About Me</a></li>
-              <li class="link"><a href="./portafolio.html">Portfolio</a></li>
-              <li class="link">
-                <a href="./allprojects.html">Achievements</a>
-              </li>
-            </ul>
-          </div>
-          <div class="btn contact">
-            <button>Contact</button>
-          </div>
-        </nav>
-      </header>
-      <main class="main">
+        </div>
         <div class="main-content">
-          <h1>
-            “First, solve the problem. Then, write the
-            <span class="code">code.”</span>
-            <span class="author">- John Johnson</span>
-          </h1>
-          <p>I will meet your Expectations</p>
-          <div class="btn hire">
-            <button>
-              <a
-                class="link-resume"
-                href="./Yeisson Giraldo - Resume WebDeveloper.pdf"
-                download=""
-                >Get my Resume</a
+          <!-- Hero -->
+          <div class="hero">
+            <div class="hero-passion">
+              <div class="cube">
+                <div class="top"></div>
+                <div class="cube__inner">
+                  <span style="--i: 0"
+                    ><img src="./images/books.jpg" alt="books photo"
+                  /></span>
+                  <span style="--i: 1"
+                    ><img src="./images/coding.jpg" alt="music photo"
+                  /></span>
+                  <span style="--i: 2">
+                    <img src="./images/mtb.jpg" alt="mountain bike"
+                  /></span>
+                  <span style="--i: 3"
+                    ><img src="./images/music.jpg" alt=""
+                  /></span>
+                </div>
+              </div>
+            </div>
+            <div class="hero-description">
+              <span class="my-photo">
+                <img src="./images/perfil1.jpg" alt=""
+              /></span>
+              <p class="hero-description-text">
+                Hello, I'm <span class="my-name" id="me">Yeisson Giraldo</span>
+                <br />
+                <span class="mr">fervent</span>
+                <span class="profession">Engineer - Web Developer</span> &
+                <span class="profession">Programmer.</span> <br />
+                <span class="mr"
+                  >From the beginning , my goal <br />has been to be on a
+                  learning path that <strong>never ends.</strong>
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="projects-title section">
+            <h2>Projects</h2>
+          </div>
+          <!-- projects -->
+          <div class="project section pj-bg p1">
+            <div class="project-main">
+              <span class="p-num">01</span>
+              <div class="project-decription">
+                <h3 class="project-decription-title">Fitness Tracker App</h3>
+                <p class="project-decription-info">
+                  API <span class="pipe">|</span> Create & share fitness
+                  routines <span class="pipe">|</span> <span> </span>
+                  <span class="js"
+                    >PostgreSQL React, Node.js, Express , pg library &
+                    JWT.</span
+                  >
+                  <span class="pipe">|</span>
+                </p>
+                <a
+                  href="https://fitness-tracker-site.netlify.app/"
+                  target="_blank"
+                  class="link-page"
+                  >See more</a
+                >
+              </div>
+              <div class="project-imagen">
+                <img src="./images/fitness tracker.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="project section pj-bg">
+            <div class="project-main">
+              <span class="p-num">02</span>
+              <div class="project-decription order-one">
+                <h3 class="project-decription-title">E-Commerce Page</h3>
+                <p class="project-decription-info">
+                  Webpage <span class="pipe">|</span> E-commerce page adaptable
+                  to any product and company. <span class="pipe">|</span>
+                  <span class="js"> HTML & CSS.</span>
+                  <span class="pipe">|</span>
+                </p>
+                <a
+                  href="https://e-commercer-project.netlify.app/"
+                  target="_blank"
+                  class="link-page"
+                  >See more</a
+                >
+              </div>
+              <div class="project-imagen">
+                <img src="./images/Project1.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="project section pj-bg">
+            <div class="project-main">
+              <span class="p-num">03</span>
+              <div class="project-decription">
+                <h3 class="project-decription-title">TicTacToe</h3>
+                <p class="project-decription-info">
+                  Game <span class="pipe">|</span> 2 players game
+                  <span class="pipe">|</span>
+                  <span class="js">JavaScript, HTML & CSS.</span>
+                  <span class="pipe">|</span>
+                </p>
+                <a
+                  href="https://yeisonnn-tic-tac-toe.netlify.app/"
+                  target="_blank"
+                  class="link-page"
+                  >See more</a
+                >
+              </div>
+              <div class="project-imagen">
+                <img src="./images/tictactoe.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="project section pj-bg">
+            <div class="project-main">
+              <span class="p-num">04</span>
+              <div class="project-decription order-one">
+                <h3 class="project-decription-title">RestaWant</h3>
+                <p class="project-decription-info">
+                  API <span class="pipe">|</span> Functional E-commerce page.
+                  <span class="pipe">|</span>
+                  <span class="js"
+                    >PostgreSQL React, Node.js, Express , pg library &
+                    JWT.</span
+                  >
+                  <span class="pipe">|</span>
+                </p>
+                <a
+                  href="https://restawant-products.netlify.app/"
+                  target="_blank"
+                  class="link-page"
+                  >See more</a
+                >
+              </div>
+              <div class="project-imagen">
+                <img src="./images/RestaWant.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="project section pj-bg">
+            <div class="project-main">
+              <span class="p-num">05</span>
+              <div class="project-decription">
+                <h3 class="project-decription-title">Stranger's Things</h3>
+                <p class="project-decription-info">
+                  App <span class="pipe">|</span> Craigslist-style website -
+                  Users can create/read posts and send messages by fetching data
+                  from an API. <span class="pipe">|</span>
+                  <span class="js">React & JWT.</span>
+                  <span class="pipe">|</span>
+                </p>
+                <a
+                  href="https://ben-tay-yei-strangers-things.netlify.app/"
+                  target="_blank"
+                  class="link-page"
+                  >See more</a
+                >
+              </div>
+              <div class="project-imagen">
+                <img src="./images/stranger.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="project section pj-bg">
+            <div class="project-main">
+              <span class="p-num">06</span>
+              <div class="project-decription order-one">
+                <h3 class="project-decription-title">RetroDraw</h3>
+                <p class="project-decription-info">
+                  Game <span class="pipe">|</span> Drawing using 8 different
+                  colors. This app allows you to save your last drawing.
+                  <span class="pipe">|</span>
+                  <span class="js"> HTML - CSS - JavaScript</span>
+                  <span class="pipe">|</span>
+                </p>
+                <a
+                  href="https://yeisson-retro-draw.netlify.app/"
+                  target="_blank"
+                  class="link-page"
+                  >See more</a
+                >
+              </div>
+              <div class="project-imagen">
+                <img src="./images/retro.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="projects-title section" id="about">
+            <h2>About</h2>
+          </div>
+          <!-- about -->
+          <div class="about-main section">
+            <p>
+              I have a Degree in
+              <span class="profession">Biological Engineering</span> <br /><span
+                class="mr"
               >
-            </button>
+                and recent in <span class="profession">Web Development.</span>
+              </span>
+            </p>
+            <p>
+              <span> I’m learning diverse tech skills</span>
+              in order to <br />build a multi-skill profile that can function in
+              the front-end and back-end of web development.
+            </p>
+          </div>
+
+          <!-- skills -->
+          <div class="projects-title section">
+            <h2>Skills</h2>
+          </div>
+          <div class="skills section" id="skills">
+            <div class="skill-header">
+              <h3>Skills</h3>
+              <p>
+                These are some of the skills that I have acquired during this
+                journey.
+              </p>
+            </div>
+            <div class="skills-content">
+              <div class="skill-type type-2">
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-bar"><span></span></div>
+              </div>
+              <div class="skill-type type-1">
+                <div class="skill-name">HTML - CSS & SaSS</div>
+                <div class="skill-bar"><span></span></div>
+              </div>
+
+              <div class="skill-type type-3">
+                <div class="skill-name">React - Redux</div>
+                <div class="skill-bar"><span></span></div>
+              </div>
+              <div class="skill-type type-4">
+                <div class="skill-name">Node Js</div>
+                <div class="skill-bar"><span></span></div>
+              </div>
+              <div class="skill-type type-5">
+                <div class="skill-name">PostgreSQL</div>
+                <div class="skill-bar"><span></span></div>
+              </div>
+              <div class="skill-type type-6">
+                <div class="skill-name">Git & GitHub</div>
+                <div class="skill-bar"><span></span></div>
+              </div>
+              <div class="skill-type type-7">
+                <div class="skill-name">Spanish - English</div>
+                <div class="skill-bar"><span></span></div>
+              </div>
+            </div>
+          </div>
+          <!-- Resume -->
+          <div class="projects-title section">
+            <h2>Resume</h2>
+          </div>
+          <div class="resume-main section" id="resume">
+            <div class="resume-content">
+              <div class="resume-link">
+                <a
+                  href="./Yeisson Giraldo - CV WebDeveloper 2022.pdf"
+                  download=""
+                  >Download CV</a
+                >
+              </div>
+              <div class="resume-info">
+                Click here to get a copy in pdf format
+              </div>
+            </div>
+          </div>
+
+          <!-- Resume -->
+          <div class="projects-title section">
+            <h2>Education</h2>
+          </div>
+          <div class="education section" id="education">
+            <div class="education-main">
+              <div class="education-card">
+                <div class="education-title">React the complete guide</div>
+                <div class="education-info">
+                  <p>Udemy</p>
+                  <p>Sep 2022</p>
+                </div>
+              </div>
+              <div class="education-card">
+                <div class="education-title">Algorithms & Data Structures</div>
+                <div class="education-info">
+                  <p>Udemy</p>
+                  <p>Sep 2022</p>
+                </div>
+              </div>
+              <div class="education-card">
+                <div class="education-title">Web Development</div>
+                <div class="education-info">
+                  <p>University of Illinois</p>
+                  <p>Aug 2022</p>
+                </div>
+              </div>
+              <div class="education-card">
+                <div class="education-title">SQL & PostgreSQL</div>
+                <div class="education-info">
+                  <p>Udemy</p>
+                  <p>Jul 2022</p>
+                </div>
+              </div>
+              <div class="education-card">
+                <div class="education-title">Git & GitHub</div>
+                <div class="education-info">
+                  <p>Udemy</p>
+                  <p>Apr 2022</p>
+                </div>
+              </div>
+              <div class="education-card">
+                <div class="education-title">Ultimate Git Course</div>
+                <div class="education-info">
+                  <p>Code with Mosh</p>
+                  <p>Mar 2022</p>
+                </div>
+              </div>
+              <div class="education-card">
+                <div class="education-title">JavaScript Weird Parts</div>
+                <div class="education-info">
+                  <p>Udemy</p>
+                  <p>Feb 2022</p>
+                </div>
+              </div>
+              <div class="education-card">
+                <div class="education-title">Advanced CSS & Sass</div>
+                <div class="education-info">
+                  <p>Udemy</p>
+                  <p>Feb 2022</p>
+                </div>
+              </div>
+              <div class="education-card">
+                <div class="education-title">
+                  Responsive Websites HMTL & CSS
+                </div>
+                <div class="education-info">
+                  <p>Udemy</p>
+                  <p>Jan 2022</p>
+                </div>
+              </div>
+              <div class="education-card">
+                <div class="education-title">Complete JavaScript Course</div>
+                <div class="education-info">
+                  <p>Udemy</p>
+                  <p>Jan 2022</p>
+                </div>
+              </div>
+              <div class="education-card">
+                <div class="education-title">Ultimate JavaScript Series</div>
+                <div class="education-info">
+                  <p>Code with Mosh</p>
+                  <p>Jan 2022</p>
+                </div>
+              </div>
+              <div class="education-card">
+                <div class="education-title">Creative JavaScript Course</div>
+                <div class="education-info">
+                  <p>Udemy</p>
+                  <p>Dec 2021</p>
+                </div>
+              </div>
+              <div class="education-card">
+                <div class="education-title">
+                  The ultimate HTML5 & CSS 3 Series
+                </div>
+                <div class="education-info">
+                  <p>Code with Mosh</p>
+                  <p>Nov2021</p>
+                </div>
+              </div>
+              <div class="education-card">
+                <div class="education-title">
+                  Introduction to Data Analytics
+                </div>
+                <div class="education-info">
+                  <p>Simpli Learn</p>
+                  <p>Jun2021</p>
+                </div>
+              </div>
+              <div class="education-card">
+                <div class="education-title">English as second language</div>
+                <div class="education-info">
+                  <p>Interactive College - Atlanta</p>
+                  <p>Oct 2015</p>
+                </div>
+              </div>
+              <div class="education-card">
+                <div class="education-title">Biological Engineering</div>
+                <div class="education-info">
+                  <p>National University</p>
+                  <p>Oct 2010</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact -->
+          <div class="projects-title" id="about">
+            <h2>Contact</h2>
+          </div>
+          <div class="contact-main" id="contact">
+            <div class="contact-content">
+              <p>Find me Here!</p>
+              <div class="contact-links">
+                <a
+                  href="https://www.linkedin.com/in/yeisson-giraldo-5526766b/"
+                  target="_blank"
+                  alt="linkedIn icon"
+                  ><img src="./images/icons8-linkedin.svg" class="icon-link"
+                /></a>
+                <a
+                  href="https://github.com/yeisonnn"
+                  target="_blank"
+                  alt="linkedIn icon"
+                  ><img
+                    src="./images/code-github-hosting-svgrepo-com.svg"
+                    class="icon-link"
+                /></a>
+                <a href="mailto: yeisonnn@gmail.com" alt="gmail icon"
+                  ><img src="./images/icons8-gmail-logo.svg" class="icon-link"
+                /></a>
+              </div>
+            </div>
           </div>
         </div>
-      </main>
-      <section class="skills">
-        <h3>Skills</h3>
-        <div class="skills-logo">
-          <img src="./images/html-5-svgrepo-com.svg" />
-          <img src="./images/css-3-svgrepo-com.svg" />
-          <img src="./images/javascript-logo-svgrepo-com.svg" />
-          <img src="./images/react-svgrepo-com.svg" />
-        </div>
-      </section>
-
-      <div class="see-resume">
-        <button class="see-resume-btn">See Resume</button>
       </div>
-
-      <section class="resume hidden">
-        <div class="resume-content">
-          <div class="resume-header">
-            <h2 class="resume-header__title">Yeisson Giraldo Catano</h2>
-            <div class="resume-header__info">
-              <p>yeisonnn@gmail.com</p>
-              <p>linkedin.com/in/yeisson-giraldo-5526766b/</p>
-              <p>yeisson-g-portafolio.netlify.app/index.html</p>
-            </div>
-          </div>
-
-          <div class="resume-body">
-            <div class="resume-body__skills">
-              <div class="resume-body--info">
-                <h3 class="resume-body--title">Skills</h3>
-                <div class="resume-body--content">
-                  <p>
-                    JavaScript, JSX, HTML5, CSS3, Sass, Node, React, Express,
-                    React/Redux, Git, GitHub, PostgreSQL
-                  </p>
-                  <p>Bilingual: English & Spanish</p>
-                </div>
-              </div>
-              <div class="resume-body--info">
-                <h3 class="resume-body--title">Education</h3>
-                <div class="resume-body--education">
-                  <div class="body-education">
-                    <p>University of Illinois Chicago</p>
-                    <p>Certificate in Web Development | 2022</p>
-                  </div>
-                  <div class="body-education">
-                    <p>National University, Colombia</p>
-                    <p>Degree In Biological Engineering | 2010</p>
-                  </div>
-                  <div class="body-education">
-                    <p>Interactive College of Technology, Atlanta</p>
-                    <p>English as a Second Language | 2015</p>
-                  </div>
-                </div>
-              </div>
-              <div class="resume-body--info">
-                <h3 class="resume-body--title">Work Experience</h3>
-                <div class="resume-body--work">
-                  <div class="work">
-                    <p>Machine Operator & Kit Assembler</p>
-                    <p>
-                      <span>LMI Packing, Abbott Lab</span> | 4.2022 – present
-                    </p>
-                  </div>
-                  <div class="work">
-                    <p>CDL Driver</p>
-                    <p><span>TRX Inc</span>, Conley GA | 05.2021 – 09.2021</p>
-                    <p><span>Iberia</span>, Norcross GA | 07.2019 – 02.2021</p>
-                    <p><span>LC Food</span>, Marietta GA | 06.2016 – 08.2018</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="resume-body__certifications">
-              <h3 class="resume-body--title">Certifications</h3>
-              <div class="body-certificates">
-                <p class="diplomas">
-                  <span>Algorithms & Data Structures</span>| Udemy | Sep 2022
-                </p>
-              </div>
-              <div class="body-certificates">
-                <p class="diplomas">
-                  <span>SQL & PostgreSQL</span>| Udemy | Jul 2022
-                </p>
-              </div>
-              <div class="body-certificates">
-                <p class="diplomas">
-                  <span>Git & GitHub</span>| Udemy | Apr 2022
-                </p>
-              </div>
-              <div class="body-certificates">
-                <p class="diplomas">
-                  <span>JavaScript: Weird Parts </span>| Udemy | Feb 2022
-                </p>
-              </div>
-              <div class="body-certificates">
-                <p class="diplomas">
-                  <span>Responsive Website: HTML & CSS </span>| Udemy | Feb 2022
-                </p>
-              </div>
-              <div class="body-certificates">
-                <p class="diplomas">
-                  <span>Advance CSS & Sass: Flexbox, Grid </span>| Udemy | Jan
-                  2022
-                </p>
-              </div>
-              <div class="body-certificates">
-                <p class="diplomas">
-                  <span>Ultimate Git Course </span>| Code with Mosh | Mar 2021
-                </p>
-              </div>
-              <div class="body-certificates">
-                <p class="diplomas">
-                  <span>Complete JavaScript Course</span>| Udemy | Jan 2022
-                </p>
-              </div>
-
-              <div class="body-certificates">
-                <p class="diplomas">
-                  <span>Ultimate JavaScript</span>| Code with Mosh | Dec 2021
-                </p>
-              </div>
-              <div class="body-certificates">
-                <p class="diplomas">
-                  <span>Creative JavaScript Course </span>| Udemy | Dec 2021
-                </p>
-              </div>
-              <div class="body-certificates">
-                <p class="diplomas">
-                  <span>Ultimate HTML5 & CSS3</span>| Code with Mosh | Nov 2021
-                </p>
-              </div>
-              <div class="body-certificates">
-                <p class="diplomas">
-                  <span>Intro to Data Analytics </span>| SimpliLearn | Jun 2021
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="resume-projects">
-            <div class="resume-projects__title">
-              <h3>Development Projects</h3>
-            </div>
-            <div class="resume-projects__body">
-              <div class="project">
-                <p class="project-title">
-                  <span>TicTacToe - Game</span>
-                  | <span>Sole Developer</span> |
-                  https://github.com/yeisonnn/ticTacToe-Game
-                </p>
-                <p>
-                  &#8226; Developed a simple game engaging two players with an
-                  intuitive interface.
-                </p>
-                <p>&#8226; JavaScript, HTML & CSS.</p>
-              </div>
-
-              <div class="project">
-                <p class="project-title">
-                  <span>E-commerce Project</span>
-                  | <span>Sole Developer</span> |
-                  https://e-commercer-project.netlify.app/
-                </p>
-                <p>
-                  &#8226; E-commerce page that can be adaptable to any product
-                  and company. Great design and excellent user experience.
-                </p>
-                <p>&#8226; HTML & CSS.</p>
-              </div>
-
-              <div class="project">
-                <p class="project-title">
-                  <span>RestaWant</span>
-                  | <span>Team Developer</span> |
-                  https://restawant-products.netlify.app/
-                </p>
-                <p>
-                  &#8226; Front end and back end functional E-commerce page that
-                  can be adapted to any product.
-                </p>
-                <p>
-                  &#8226; React, PostgreSQL, Node.js, Express and PG library and
-                  JWT.
-                </p>
-              </div>
-
-              <div class="project">
-                <p class="project-title">
-                  <span>FitnessTrack app</span>
-                  | <span>Team Developer</span> |
-                  https://github.com/yeisonnn/FitnessTrackerBackend
-                </p>
-                <p>
-                  &#8226; Full-stack API enabling users to log in, build fitness
-                  routines and view other users’ activity and track goals.
-                </p>
-                <p>
-                  &#8226; React, PostgreSQL, Node.js, Express and PG library and
-                  JWT.
-                </p>
-              </div>
-
-              <div class="project">
-                <p class="project-title">
-                  <span>JuiceBox Database </span>
-                  | <span>Team Developer</span> |
-                  https://intense-fortress-12573.herokuapp.com/
-                </p>
-                <p>
-                  &#8226; Design of back-end database and a web server with a
-                  custom API.
-                </p>
-                <p>&#8226; Node.js, Express and PG library and JWT.</p>
-              </div>
-
-              <div class="project">
-                <p class="project-title">
-                  <span>Stranger’s things</span>
-                  | <span>Team Developer</span> |
-                  https://ben-tay-yei-strangers-things.netlify.app/
-                </p>
-                <p>
-                  &#8226; Craigslist-style website that allows registered users
-                  to create/read posts and send messages by fetching data from
-                  an API.
-                </p>
-                <p class="last">&#8226; React, JWT.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <footer class="footer">
-        <h2>Check My Work</h2>
-        <h3>Let me Help you - Doing what I love!!</h3>
-        <div class="social">
-          <img src="./images/code-github-hosting-svgrepo-com.svg" />
-          <img src="./images/connect-media-networking-svgrepo-com.svg" />
-          <img src="./images/facebook-svgrepo-com.svg" />
-        </div>
-      </footer>
     </div>
   </body>
 </html>
