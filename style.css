@@ -576,6 +576,9 @@ body {
 .type-7 {
   grid-template-columns: 82% 1fr;
 }
+.type-8 {
+  grid-template-columns: 68% 1fr;
+}
 
 .skill-name {
   background-color: var(--color-silver);
